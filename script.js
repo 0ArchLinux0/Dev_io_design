@@ -14,7 +14,7 @@ window.onscroll = function() {
 };
 
 
-$(function(){
+/*$(function(){
 	
 	var $window = $(window);		//Window object
 	
@@ -38,4 +38,4 @@ $(function(){
 					
 	});
 	
-});
+});*/

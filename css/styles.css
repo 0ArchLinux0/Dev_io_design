@@ -268,7 +268,7 @@ footer {
     max-height: 1080px;
     background: url(../images/lead-bg.jpg);
     background-size: cover; /*Show full image*/
-    z-index: 1;
+    z-index: -1;
     padding: 15px;
     overflow: hidden;
     /*position: relative;
