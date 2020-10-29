@@ -93,7 +93,7 @@ header li {
 header a {
     display: block;
     color: #3498db;
-    padding: 10px
+    padding: 11px
 }
 
 header a:hover {
@@ -220,7 +220,8 @@ footer {
     padding: 15px 25px;
     border: 3px solid #fff;
     border-radius: 30px;
-    transition: .5s ease all
+    transition: .5s ease all;
+    margin: 55px auto auto auto;
 }
 
 .btn-rounded-white:hover {
@@ -258,7 +259,7 @@ footer {
 }
 
 .background-alt {
-    background: #f2f2f5
+    background: #f2f2f5;
 }
 
 #lead {
@@ -268,7 +269,7 @@ footer {
     max-height: 1080px;
     background: url(../images/lead-bg.jpg);
     background-size: cover; /*Show full image*/
-    z-index: -1;
+    z-index: 1;
     padding: 15px;
     overflow: hidden;
     /*position: relative;
@@ -379,7 +380,7 @@ footer {
 }
 
 #about {
-    padding: 75px 15px;
+    padding: 75px 15px ;
     border-bottom: 1px solid #dcd9d9;
     background-color:#ffffff;
     position: relative;
@@ -396,9 +397,12 @@ footer {
 }
 
 #experience {
+    position: relative;
     padding: 50px 15px;
     text-align: center;
-    border-bottom: 1px solid #dcd9d9
+    border-bottom: 1px solid #dcd9d9;
+    background-color: #f2f2f5;
+    z-index: 10
 }
 
 #experience h2 {
@@ -503,7 +507,7 @@ footer {
 #education {
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid #dcd9d9;
-    background: #d3d3d3; /*#a9a9a9*/;
+    background: #E6E6E6; /*#a9a9a9*/;
     text-align: center
 }
 
@@ -514,7 +518,7 @@ footer {
 
 .education-block {
     max-width: 700px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 50px auto;
     padding: 15px;
     border: 2px solid #ffffff;/*#dcd9d9*/;
     text-align: left
@@ -788,7 +792,7 @@ footer {
         min-height: auto;
         max-height: auto;
         padding: 100px 15px;
-        z-index: 2
+        z-index: 1
     }
 
     #lead-content {
