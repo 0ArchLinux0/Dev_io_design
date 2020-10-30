@@ -69,7 +69,7 @@ header {
     left: 0;
     right: 0;
     text-align: center;
-    z-index: 10;
+    z-index: 11;
     animation-name: dropHeader;
     animation-iteration-count: 1;
     animation-timing-function: ease;
@@ -116,6 +116,13 @@ header.sticky {
     position: fixed;
     z-index: 999
 }
+#menu {
+        height: 100%;
+        overflow-y: auto;
+        box-shadow: none;
+        border-radius: auto;
+        width: auto;
+    }
 
 #menu.active {
     display: block
@@ -221,7 +228,7 @@ footer {
     border: 3px solid #fff;
     border-radius: 30px;
     transition: .5s ease all;
-    margin: 55px auto auto auto;
+    margin: 0px auto auto auto;
 }
 
 .btn-rounded-white:hover {
@@ -293,8 +300,8 @@ footer {
     max-height: 1080px;
     max-width: 1920px;
     min-height: 500px;
-    max-height: 1080px;
     overflow: hidden;
+    z-index: 3
 }
 
 .background_image{
@@ -320,7 +327,7 @@ footer {
 
 #lead-content h1,
 #lead-content h2 {
-    margin: 0
+    
 }
 
 #lead-content h1 {
@@ -329,14 +336,16 @@ footer {
     font-size: 5em;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    line-height: 0.9em
+    line-height: 0.9em;
+    margin-top: 100px;
+    margin-bottom: 10px;
 }
 
 #lead-content h2 {
     color: #a0cfee;
     font-weight: 500;
     font-size: 2.25em;
-    margin-bottom: 15px
+    margin-bottom: 0px
 }
 
 #lead-overlay {
@@ -352,6 +361,7 @@ footer {
 }
 
 #lead-down {
+    margin-top:10px;
     position: absolute;
     left: 0;
     right: 0;
@@ -802,10 +812,11 @@ footer {
 
 @media only screen and (max-width: 992px) {
     #lead {
-        height: auto;
-        min-height: auto;
-        max-height: auto;
-        padding: 100px 15px;
+        position:absolute;
+        height: 100%;
+        width: 100%;
+       
+        
         z-index: 1
     }
 
@@ -817,7 +828,9 @@ footer {
     }
 
     #lead-content h1 {
-        font-size: 3em
+        font-size: 3em;
+        margin-top:150px;
+
     }
 
     #lead-content h2 {
@@ -848,6 +861,23 @@ footer {
         bottom: 0;
         height: 100%
     }
+    #lead {
+        position:absolute;
+        height: 100%;
+        width: 100%;
+       
+        
+        z-index: 1
+    }
+    #lead-container{
+    position: relative;
+    height: auto;
+    width: auto;
+    max-height: 1100px;
+    max-width: 768px;
+    min-height: 300px;
+    overflow: hidden;
+}
 
     #mobile-menu-open,
     #mobile-menu-close {
@@ -868,6 +898,7 @@ footer {
     }
 
     #lead-content h1 {
+        margin-top:70px;
         font-size: 2em
     }
 
@@ -912,6 +943,8 @@ footer {
 @media only screen and (max-width: 480px) {
     #lead-content h1 {
         font-size: 1.5em
+        margin-top:100px;
+        margin-bottom:40px;
     }
 
     #lead-content h2 {
