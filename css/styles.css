@@ -332,10 +332,10 @@ footer {
 
 .background_image{
 	position: relative;
-    height: 100vh;
+    height: 160vh;
     width:100vw;
     min-height: 500px;
-    max-height: 1400px; /*1080px-->2projects*/
+    max-height: 100vw; /*1080px-->2projects*/
     background: url(../images/pond.jpg);
     background-size: cover;
     padding: 15px;
@@ -673,10 +673,10 @@ footer {
 
 .project-info h3 {
     position: relative;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: 300;
     color: #374054;
-    margin: 0 0 15px 0
+    margin: 0 0 10px 0
 }
 
 .project-info p {
@@ -879,6 +879,23 @@ footer {
     }
 }
 
+@media only screen and (max-width: 1190px){
+    /*.background_image{
+        height:300vh;
+        width:100vw;
+    }*/
+    .background_image{
+    position: relative;
+    height: 180vh;
+    min-height: auto;
+    max-height: 1400px; /*1080px-->2projects*/
+    background: url(../images/pond.jpg);
+    background-size: cover;
+    padding: 15px;
+    overflow: hidden;
+    }
+}
+
 @media only screen and (max-width: 992px) {
     #lead {
         position:absolute;
@@ -955,6 +972,7 @@ footer {
         width:100vw;
     }
 }
+
 
 @media only screen and (max-width: 768px) {
     header {
@@ -1075,6 +1093,23 @@ footer {
 
     .social {
         text-align: center
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .background_image{
+    position: relative;
+    height: 180vh;
+    width: 100vw;
+    background: url(../images/pond.jpg);
+    background-size: cover;
+    padding: 15px;
+    overflow: hidden;
+    }
+    #skills{
+        height:90vh;
+        width: 100vw;
+
     }
 }
 
