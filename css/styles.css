@@ -333,6 +333,7 @@ footer {
 .background_image{
 	position: relative;
     height: 100vh;
+    width:100vw;
     min-height: 500px;
     max-height: 1400px; /*1080px-->2projects*/
     background: url(../images/pond.jpg);
@@ -442,24 +443,26 @@ footer {
 }
 
 #about h2 {
+    position:absolute;
     color: #374054;
-    position: relative;
-    right:6vw;
-    top: 8vw;
-
+    left:0px;
+    top:0px;
+    font-size: 30px
 
 }
 
 #about p {
     color: #74808a;
-    margin: 0
+    margin-top: 30px;
+    font-size: 17px;
 }
 
 #experience {
     position: relative;
     padding: 3px;
     top:100vh;
-    height:50vh;
+    height:80vh;
+    width: 100vw;
     text-align: center;
     border-bottom: 1px solid #dcd9d9;
     background:url(../images/lead-projects.jpg);
@@ -696,7 +699,8 @@ footer {
 #skills {
     position:relative;
     top:100vh;
-    height:40vh;
+    height:80vh;
+    width: 100vw;
     padding: 100px 15px;
     text-align: center;
     background: url(../images/lead-bg.jpg);
@@ -944,10 +948,11 @@ footer {
     }
 
     #skills{
-        height:80vh;
+        height:60vh;
     }
     #experience{
         height:80vh;
+        width:100vw;
     }
 }
 
@@ -1082,6 +1087,11 @@ footer {
 
     #lead-content h2 {
         font-size: 1em
+    }
+
+    #about{
+        height: 40vh;
+        width: 100vw;
     }
 
     #lead-content a {
