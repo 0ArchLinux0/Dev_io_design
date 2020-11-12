@@ -855,6 +855,14 @@ footer {
     padding: 0 0 0 15px
 }
 
+@media only screen and (orientation: landscape){
+    #warning{
+        visibility: visible;
+        display:block;
+        z-index: 10000000;
+    }
+}
+
 @media only screen and (max-width: 750px) {
 
     #experience-timeline:before,
@@ -1043,6 +1051,15 @@ footer {
         box-shadow: none;
         border-radius: 0;
         width: 100%
+    }
+
+    #warning{
+        position: fixed;
+        font-size: 100px;
+        font-weight: 800;
+        z-index:2000;
+        color: red;
+        visibility: visible;
     }
 
     #menu li {
