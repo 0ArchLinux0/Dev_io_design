@@ -10,10 +10,17 @@
     that don't come from third party libraries. This file gets compiled using
     Gulp and send to the /css folder which is then loaded on the page.
 */
+html,
+body{
+    height: :100%;
+    position: relative;
+}
+
 body {
     font-family: 'Lato', sans-serif;
-    font-size: 16px
+    font-size: 24px;
 }
+
 
 body.active {
     overflow: hidden;
@@ -250,7 +257,7 @@ footer {
     display: inline-block;
     font-size: 2em;
     font-weight: 300;
-    margin: 0 0 30px 0
+    margin: 0px 20/1080vh 1920/30vw 0px
 }
 
 .heading:after {
@@ -267,19 +274,25 @@ footer {
 
 .background-alt {
     background: #f2f2f5;
+
 }
 
 #lead {
     position: absolute;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
+    top:0;
+    right:0;
+    bottom: 0;
+    left: 0;
     max-height: 100%;
     max-width: 100%;
     background: url(../images/lead-bg.jpg);
     background-size: cover; /*Show full image*/
-    z-index: 10;
+    z-index: 3;
     padding: 15px;
     overflow: hidden;
+    display: inline-block;
     /*position: relative;
     top: 0;
     left: 0;
@@ -290,34 +303,47 @@ footer {
     background: url(../images/lead-bg.jpg);
     background-size: cover;
     backgournd-size: cover;*/
-
+   /* position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background:url(../images/lead-bg.jpg);
+    background-size: cover; /*Show full image*/
+   /* z-index: 10000*/
 }
 
 #lead-container{
-    position: relative;
-    height: auto;
-    width: auto;
-    max-height: 1080px;
-    max-width: 1920px;
+    position: absolute;
+    height:100vh;
+    width: 100vw;
+    top:0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    max-height: 100vh;
+    max-width:  100vw;
     min-height: 500px;
     overflow: hidden;
-    z-index: 3
+    z-index: 5;
 }
 
 .background_image{
 	position: relative;
     height: 100vh;
     min-height: 500px;
-    max-height: 500px; /*1080px-->2projects*/
-    background: url(../images/lead-bg3.jpg);
+    max-height: 1400px; /*1080px-->2projects*/
+    background: url(../images/pond.jpg);
     background-size: cover;
     padding: 15px;
-    overflow: hidden
+    overflow: hidden;
    /* z-index: 1;*/
 }
 
 #lead-content {
-    position: absolute;
+    position: relative;
     z-index: 10;
     top: 50%;
     left: 50%;
@@ -331,7 +357,7 @@ footer {
 }
 
 #lead-content h1 {
-    color: #fff;
+    color: #FFF;
     font-weight: 900;
     font-size: 5em;
     text-transform: uppercase;
@@ -356,8 +382,9 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(33, 125, 187, 0.8);
-    z-index: 1
+    background:url(../images/lead-bg.jpg);
+    background-size: cover; /*Show full image*/
+    z-index: 10000
 }
 
 #lead-down {
@@ -404,15 +431,23 @@ footer {
 }
 
 #about {
-    padding: 75px 15px ;
-    border-bottom: 1px solid #dcd9d9;
-    background-color:#ffffff;
     position: relative;
-    z-index: 1000;
+    top:100vh;
+    padding: 75/1920px 15/1080px ;
+    height:35vh;
+    width:100vw;
+    border-bottom: 1px solid #dcd9d9;
+    background-color:#FFF;
+    z-index: 1;
 }
 
 #about h2 {
-    color: #374054
+    color: #374054;
+    position: relative;
+    right:6vw;
+    top: 8vw;
+
+
 }
 
 #about p {
@@ -422,15 +457,18 @@ footer {
 
 #experience {
     position: relative;
-    padding: 50px 15px;
+    padding: 3px;
+    top:100vh;
+    height:50vh;
     text-align: center;
     border-bottom: 1px solid #dcd9d9;
-    background-color: #f2f2f5;
+    background:url(../images/lead-projects.jpg);
+    background-size: cover; /*Show full image*/
     z-index: 10
 }
 
 #experience h2 {
-    color: #374054
+    color: #FFF
 }
 
 #experience-timeline {
@@ -461,6 +499,10 @@ footer {
     background: linear-gradient(to bottom, #3498db, rgba(52, 152, 219, 0));
     top: 100%;
     left: 303px
+}
+
+#experience.background-alt{
+    padding:35px;
 }
 
 .vtimeline-content {
@@ -529,9 +571,14 @@ footer {
 }
 
 #education {
+    position: relative;
+    top:100vh;
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid #dcd9d9;
-    background: #E6E6E6; /*#a9a9a9*/;
+
+    background: url(../images/snow.png); 
+    background-size: cover;
+    z-index: 15;
     text-align: center
 }
 
@@ -581,7 +628,13 @@ footer {
 #projects {
     padding: 50px 15px;
     border-bottom: 1px solid #dcd9d9;
-    text-align: center
+    text-align: center;
+    position:relative;
+    top:100vh;
+}
+
+#projects p{
+    font-size:18px;
 }
 
 #projects h2 {
@@ -592,6 +645,7 @@ footer {
 .project {
     position: relative;
     max-width: 900px;
+    min-height:300px;
     margin: 0 auto 30px auto;
     overflow: hidden;
     background: #fff;
@@ -599,7 +653,7 @@ footer {
 }
 
 .project-image {
-    float: left
+    float: left;
 }
 
 .project-info {
@@ -610,7 +664,12 @@ footer {
     padding: 15px
 }
 
+.project-text{
+    position: relative;
+}
+
 .project-info h3 {
+    position: relative;
     font-size: 1.5em;
     font-weight: 300;
     color: #374054;
@@ -635,12 +694,16 @@ footer {
 }
 
 #skills {
-    padding: 50px 15px;
-    text-align: center
+    position:relative;
+    top:100vh;
+    height:40vh;
+    padding: 100px 15px;
+    text-align: center;
+    background: url(../images/lead-bg.jpg);
 }
 
 #skills h2 {
-    color: #374054;
+    color: #FFFFFF;
     margin-bottom: 50px
 }
 
@@ -665,7 +728,9 @@ footer {
 #contact {
     padding: 50px 15px;
     background: #3498db;
-    text-align: center
+    text-align: center;
+    position:relative;
+    top:100vh;
 }
 
 #contact h2 {
@@ -813,20 +878,24 @@ footer {
 @media only screen and (max-width: 992px) {
     #lead {
         position:absolute;
-        height: 100%;
-        width: 100%;
+        height: 100vh;
+        width: 100vw;
        
         
         z-index: 1
     }
 
     #lead-content {
-        position: relative;
-        transform: none;
-        left: auto;
-        top: auto
+    position: relative;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center
+}
+    .background_image #link{
+        display: none;
     }
-
     #lead-content h1 {
         font-size: 3em;
         margin-top:150px;
@@ -838,17 +907,47 @@ footer {
     }
 
     #about {
-        text-align: center;
-        padding: 75px 15px;
-        border-bottom: 1px solid #dcd9d9;
-        background-color: #ffffff;
-        position: relative;
-        z-index: 1001;
+    position: relative;
+    top:100vh;
+    padding: 75/1920px 15/1080px ;
+    height:35vh;
+    width:100vw;
+    border-bottom: 1px solid #dcd9d9;
+    background-color:#FFF;
+    z-index: 1;
+}
+    #about h2{
+        font-size: 24px
+        position:absolute;
+        bottom: :0vh;
+        left:2vw;
+
 
     }
 
     #about p {
-        text-align: left
+        font-size: 16px;
+        position: absolute;
+        top:5vh;
+        text-align: right
+    }
+    
+    .background_image{
+    position: relative;
+    height: 140vh;
+    min-height: auto;
+    max-height: 1400px; /*1080px-->2projects*/
+    background: url(../images/pond.jpg);
+    background-size: cover;
+    padding: 15px;
+    overflow: hidden;
+    }
+
+    #skills{
+        height:80vh;
+    }
+    #experience{
+        height:80vh;
     }
 }
 
@@ -861,18 +960,29 @@ footer {
         bottom: 0;
         height: 100%
     }
-    #lead {
+    #lead-container{
         position:absolute;
-        height: 100%;
-        width: 100%;
-       
+        height: 100vw;
+        width: 100vw;
+        
         
         z-index: 1
     }
+    #about{
+        position: relative;
+        top:100vh;
+         padding: 75/1920vw 15/1080vh ;
+    height:35vh;
+    width:100vw;
+    border-bottom: 1px solid #dcd9d9;
+    background-color:#FFF;
+    z-index: 1;
+
+    }
     #lead-container{
     position: relative;
-    height: auto;
-    width: auto;
+    height: 100%; /*//수정 auto*/
+    width: 100%;
     max-height: 1100px;
     max-width: 768px;
     min-height: 300px;
@@ -895,6 +1005,10 @@ footer {
     #menu li {
         display: block;
         margin-bottom: 10px
+    }
+    #about h2{
+       /* display:relative;
+        left:380px;*/
     }
 
     #lead-content h1 {
