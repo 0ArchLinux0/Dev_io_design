@@ -893,7 +893,7 @@ footer {
     transform: translate(-50%, -50%);
     text-align: center
 }
-    .background_image #link{
+    #link{
         display: none;
     }
     #lead-content h1 {
@@ -968,6 +968,25 @@ footer {
         
         z-index: 1
     }
+
+    #lead {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+   }
+
+     #lead-content {
+    position: relative;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center
+}
+    #experience div{
+        font-size: 18px;
+    }
+
     #about{
         position: relative;
         top:100vh;
@@ -980,9 +999,9 @@ footer {
 
     }
     #lead-container{
-    position: relative;
-    height: 100%; /*//수정 auto*/
-    width: 100%;
+    position: absolute;
+    height: 100vh; /*//수정 auto*/
+    width: 100vw;
     max-height: 1100px;
     max-width: 768px;
     min-height: 300px;
