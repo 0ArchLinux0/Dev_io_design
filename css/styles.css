@@ -862,7 +862,7 @@ footer {
     padding: 0 0 0 15px
 }
 
-@media only screen and (orientation: landscape) {
+/*@media only screen and (orientation: landscape) {
     #warning {
         position: fixed;
         font-size: 100px;
@@ -871,7 +871,7 @@ footer {
         color: red;
         visibility: visible;
     }
-}
+}*/
 
 @media only screen and (orientation: portrait) {
     #warning {

@@ -1,11 +1,12 @@
 var isMobile = false;
-var filter = "win16|win32|win64|mac";
+var filter = "iPhone|iPod|iPad|Android|BlackBerry";
 if (navigator.platform) {
-    isMobile = filter.indexOf(navigator.platform.toLowerCase()) < 0;
+    isMobile = filter.indexOf(navigator.platform.toLowerCase()) > 0;
 }
 
 const inner = document.querySelector("#lead");
 const section = document.querySelector("#lead-down");
+var warn=document.getElementById("warning");
 
 console.log("offset Top:" + section.offsetTop);
 console.log("window:" + window.pageYOffset);
@@ -23,6 +24,12 @@ console.log("2");
 if (isMobile) {
     if (window.matchMedia("(orientation: landscape)").matches) {
         alert("In LandScape mode might not work well");
+        warn.setAttribute("visibility","visible");
+        warn.setAttribute("font-size","100px");
+        warn.setAttribute("font-weight: 800");
+        warn.setAttribute("z-index","2000");
+        warn.setAttribute("color","red");
+        warn.setAttribut("visibility","visible");
         console.log("1");
     }
 }
