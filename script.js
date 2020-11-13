@@ -1,5 +1,5 @@
 var isMobile = false;
-var filter = "iPhone|iPod|iPad|Android|BlackBerry";
+var filter = "iphone|ipod|ipad|android|blackberry";
 if (navigator.platform) {
     isMobile = filter.indexOf(navigator.platform.toLowerCase()) > 0;
 }
