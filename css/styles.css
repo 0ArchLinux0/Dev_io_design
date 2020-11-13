@@ -447,7 +447,7 @@ footer {
 #about h2 {
     position: absolute;
     color: #374054;
-    left: 0px;
+    left: 10px;
     top: 0px;
     font-size: 30px
 }
@@ -923,6 +923,10 @@ footer {
         padding: 15px;
         overflow: hidden;
     }
+     #about h2{
+        margin-left:20px;
+    }
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -967,6 +971,7 @@ footer {
         border-bottom: 1px solid #dcd9d9;
         background-color: #FFF;
         z-index: 1;
+
     }
 
     #about h2 {
@@ -1048,13 +1053,16 @@ footer {
     #about {
         position: relative;
         top: 100vh;
-        padding: 75/1920vw 15/1080vh;
+        margin-bottom:10px;
         height: 35vh;
         width: 100vw;
         border-bottom: 1px solid #dcd9d9;
         background-color: #FFF;
         z-index: 1;
+    }
 
+    #about h2{
+        margin-left:20px;
     }
 
     #lead-container {
