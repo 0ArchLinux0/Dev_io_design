@@ -1,27 +1,36 @@
+var isMobile = false;
+var filter = "win16|win32|win64|mac";
+if (navigator.platform) {
+    isMobile = filter.indexOf(navigator.platform.toLowerCase()) < 0;
+}
+
 const inner = document.querySelector("#lead");
 const section = document.querySelector("#lead-down");
 
-console.log("offset Top:"+section.offsetTop);
-console.log("window:"+window.pageYOffset);
+console.log("offset Top:" + section.offsetTop);
+console.log("window:" + window.pageYOffset);
 
-var height=inner.clientHeight
-console.log("h:"+height);
+var height = inner.clientHeight
+console.log("h:" + height);
 
 window.onscroll = function() {
-  let value = window.pageYOffset / height + 1;
-  console.log(value);
-  inner.style.transform = `scale(${value})`;
+    let value = window.pageYOffset / height + 1;
+    console.log(value);
+    inner.style.transform = `scale(${value})`;
 };
-
+console.log(isMobile);
 console.log("2");
-if(window.matchMedia("(orientation: landscape)").matches){
-	alert("In LandScape mode might not work well");
-	console.log("1");
+if (isMobile) {
+    if (window.matchMedia("(orientation: landscape)").matches) {
+        alert("In LandScape mode might not work well");
+        console.log("1");
+    }
+    if (window.matchMedia("(orientation: portrait)").matches) {
+        alert("In LandScape mode might not work well");
+        console.log("0");
+    }
 }
-if(window.matchMedia("(orientation: portrait)").matches){
-	alert("In LandScape mode might not work well");
-	console.log("0");
-}
+
 
 
 

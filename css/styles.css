@@ -11,7 +11,7 @@
     Gulp and send to the /css folder which is then loaded on the page.
 */
 html,
-body{
+body {
     height: :100%;
     position: relative;
 }
@@ -123,13 +123,14 @@ header.sticky {
     position: fixed;
     z-index: 999
 }
+
 #menu {
-        height: 100%;
-        overflow-y: auto;
-        box-shadow: none;
-        border-radius: auto;
-        width: auto;
-    }
+    height: 100%;
+    overflow-y: auto;
+    box-shadow: none;
+    border-radius: auto;
+    width: auto;
+}
 
 #menu.active {
     display: block
@@ -281,14 +282,15 @@ footer {
     position: absolute;
     height: 100vh;
     width: 100vw;
-    top:0;
-    right:0;
+    top: 0;
+    right: 0;
     bottom: 0;
     left: 0;
     max-height: 100%;
     max-width: 100%;
     background: url(../images/lead-bg.jpg);
-    background-size: cover; /*Show full image*/
+    background-size: cover;
+    /*Show full image*/
     z-index: 3;
     padding: 15px;
     overflow: hidden;
@@ -303,7 +305,7 @@ footer {
     background: url(../images/lead-bg.jpg);
     background-size: cover;
     backgournd-size: cover;*/
-   /* position: absolute;
+    /* position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
@@ -312,35 +314,36 @@ footer {
     left: 0;
     background:url(../images/lead-bg.jpg);
     background-size: cover; /*Show full image*/
-   /* z-index: 10000*/
+    /* z-index: 10000*/
 }
 
-#lead-container{
+#lead-container {
     position: absolute;
-    height:100vh;
+    height: 100vh;
     width: 100vw;
-    top:0;
-    right:0;
+    top: 0;
+    right: 0;
     bottom: 0;
     left: 0;
     max-height: 100vh;
-    max-width:  100vw;
+    max-width: 100vw;
     min-height: 500px;
     overflow: hidden;
     z-index: 5;
 }
 
-.background_image{
-	position: relative;
+.background_image {
+    position: relative;
     height: 160vh;
-    width:100vw;
+    width: 100vw;
     min-height: 500px;
-    max-height: 100vw; /*1080px-->2projects*/
+    max-height: 100vw;
+    /*1080px-->2projects*/
     background: url(../images/pond.jpg);
     background-size: cover;
     padding: 15px;
     overflow: hidden;
-   /* z-index: 1;*/
+    /* z-index: 1;*/
 }
 
 #lead-content {
@@ -353,9 +356,7 @@ footer {
 }
 
 #lead-content h1,
-#lead-content h2 {
-    
-}
+#lead-content h2 {}
 
 #lead-content h1 {
     color: #FFF;
@@ -383,13 +384,14 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background:url(../images/lead-bg.jpg);
-    background-size: cover; /*Show full image*/
+    background: url(../images/lead-bg.jpg);
+    background-size: cover;
+    /*Show full image*/
     z-index: 10000
 }
 
 #lead-down {
-    margin-top:10px;
+    margin-top: 10px;
     position: absolute;
     left: 0;
     right: 0;
@@ -433,41 +435,41 @@ footer {
 
 #about {
     position: relative;
-    top:100vh;
-    padding: 0px,10px,0px,0px ;
-    height:35vh;
-    width:100vw;
+    top: 100vh;
+    padding: 0px, 10px, 0px, 0px;
+    height: 35vh;
+    width: 100vw;
     border-bottom: 1px solid #dcd9d9;
-    background-color:#FFF;
+    background-color: #FFF;
     z-index: 1;
 }
 
 #about h2 {
-    position:absolute;
+    position: absolute;
     color: #374054;
-    left:0px;
-    top:0px;
+    left: 0px;
+    top: 0px;
     font-size: 30px
-
 }
 
 #about p {
     color: #74808a;
     margin-top: 30px;
-    margin-right:15px;
+    margin-right: 15px;
     font-size: 17px;
 }
 
 #experience {
     position: relative;
     padding: 3px;
-    top:100vh;
-    height:80vh;
+    top: 100vh;
+    height: 80vh;
     width: 100vw;
     text-align: center;
     border-bottom: 1px solid #dcd9d9;
-    background:url(../images/lead-projects.jpg);
-    background-size: cover; /*Show full image*/
+    background: url(../images/lead-projects.jpg);
+    background-size: cover;
+    /*Show full image*/
     z-index: 10
 }
 
@@ -505,8 +507,8 @@ footer {
     left: 303px
 }
 
-#experience.background-alt{
-    padding:35px;
+#experience.background-alt {
+    padding: 35px;
 }
 
 .vtimeline-content {
@@ -576,11 +578,11 @@ footer {
 
 #education {
     position: relative;
-    top:100vh;
+    top: 100vh;
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid #dcd9d9;
 
-    background: url(../images/snow.png); 
+    background: url(../images/snow.png);
     background-size: cover;
     z-index: 15;
     text-align: center
@@ -595,7 +597,9 @@ footer {
     max-width: 700px;
     margin: 0 auto 50px auto;
     padding: 15px;
-    border: 2px solid #ffffff;/*#dcd9d9*/;
+    border: 2px solid #ffffff;
+    /*#dcd9d9*/
+    ;
     text-align: left
 }
 
@@ -607,12 +611,14 @@ footer {
 }
 
 .education-block span {
-    color: #374054; /*#74808a;*/
+    color: #374054;
+    /*#74808a;*/
     float: right
 }
 
 .education-block h4 {
-    color: #374054; /*#74808a;*/
+    color: #374054;
+    /*#74808a;*/
     clear: both;
     font-weight: 500;
     margin: 0 0 15px 0
@@ -621,7 +627,8 @@ footer {
 .education-block p,
 .education-block ul {
     margin: 0;
-    color: #374054; /*#74808a;*/
+    color: #374054;
+    /*#74808a;*/
     font-size: 0.9em
 }
 
@@ -633,12 +640,12 @@ footer {
     padding: 50px 15px;
     border-bottom: 1px solid #dcd9d9;
     text-align: center;
-    position:relative;
-    top:100vh;
+    position: relative;
+    top: 100vh;
 }
 
-#projects p{
-    font-size:18px;
+#projects p {
+    font-size: 18px;
 }
 
 #projects h2 {
@@ -649,7 +656,7 @@ footer {
 .project {
     position: relative;
     max-width: 900px;
-    min-height:300px;
+    min-height: 300px;
     margin: 0 auto 30px auto;
     overflow: hidden;
     background: #fff;
@@ -668,7 +675,7 @@ footer {
     padding: 15px
 }
 
-.project-text{
+.project-text {
     position: relative;
 }
 
@@ -698,9 +705,9 @@ footer {
 }
 
 #skills {
-    position:relative;
-    top:100vh;
-    height:80vh;
+    position: relative;
+    top: 100vh;
+    height: 80vh;
     width: 100vw;
     padding: 100px 15px;
     text-align: center;
@@ -734,8 +741,8 @@ footer {
     padding: 50px 15px;
     background: #3498db;
     text-align: center;
-    position:relative;
-    top:100vh;
+    position: relative;
+    top: 100vh;
 }
 
 #contact h2 {
@@ -855,10 +862,21 @@ footer {
     padding: 0 0 0 15px
 }
 
-@media only screen and (orientation: landscape){
-    #warning{
+@media only screen and (orientation: landscape) {
+    #warning {
+        position: fixed;
+        font-size: 100px;
+        font-weight: 800;
+        z-index: 2000;
+        color: red;
         visibility: visible;
-        display:block;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    #warning {
+        visibility: hidden;
+        display: block;
         z-index: 10000000;
     }
 }
@@ -888,47 +906,51 @@ footer {
     }
 }
 
-@media only screen and (max-width: 1190px){
+@media only screen and (max-width: 1190px) {
+
     /*.background_image{
         height:300vh;
         width:100vw;
     }*/
-    .background_image{
-    position: relative;
-    height: 180vh;
-    min-height: auto;
-    max-height: 1400px; /*1080px-->2projects*/
-    background: url(../images/pond.jpg);
-    background-size: cover;
-    padding: 15px;
-    overflow: hidden;
+    .background_image {
+        position: relative;
+        height: 180vh;
+        min-height: auto;
+        max-height: 1400px;
+        /*1080px-->2projects*/
+        background: url(../images/pond.jpg);
+        background-size: cover;
+        padding: 15px;
+        overflow: hidden;
     }
 }
 
 @media only screen and (max-width: 992px) {
     #lead {
-        position:absolute;
+        position: absolute;
         height: 100vh;
         width: 100vw;
-       
-        
+
+
         z-index: 1
     }
 
     #lead-content {
-    position: relative;
-    z-index: 10;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center
-}
-    #link{
+        position: relative;
+        z-index: 10;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center
+    }
+
+    #link {
         display: none;
     }
+
     #lead-content h1 {
         font-size: 3em;
-        margin-top:150px;
+        margin-top: 150px;
 
     }
 
@@ -937,20 +959,20 @@ footer {
     }
 
     #about {
-    position: relative;
-    top:100vh;
-    padding: 75/1920px 15/1080px ;
-    height:35vh;
-    width:100vw;
-    border-bottom: 1px solid #dcd9d9;
-    background-color:#FFF;
-    z-index: 1;
-}
-    #about h2{
-        font-size: 24px
-        position:absolute;
+        position: relative;
+        top: 100vh;
+        padding: 75/1920px 15/1080px;
+        height: 35vh;
+        width: 100vw;
+        border-bottom: 1px solid #dcd9d9;
+        background-color: #FFF;
+        z-index: 1;
+    }
+
+    #about h2 {
+        font-size: 24px position:absolute;
         bottom: :0vh;
-        left:2vw;
+        left: 2vw;
 
 
     }
@@ -958,27 +980,29 @@ footer {
     #about p {
         font-size: 16px;
         position: absolute;
-        top:5vh;
+        top: 5vh;
         text-align: right
     }
-    
-    .background_image{
-    position: relative;
-    height: 140vh;
-    min-height: auto;
-    max-height: 1400px; /*1080px-->2projects*/
-    background: url(../images/pond.jpg);
-    background-size: cover;
-    padding: 15px;
-    overflow: hidden;
+
+    .background_image {
+        position: relative;
+        height: 140vh;
+        min-height: auto;
+        max-height: 1400px;
+        /*1080px-->2projects*/
+        background: url(../images/pond.jpg);
+        background-size: cover;
+        padding: 15px;
+        overflow: hidden;
     }
 
-    #skills{
-        height:60vh;
+    #skills {
+        height: 60vh;
     }
-    #experience{
-        height:80vh;
-        width:100vw;
+
+    #experience {
+        height: 80vh;
+        width: 100vw;
     }
 }
 
@@ -992,53 +1016,57 @@ footer {
         bottom: 0;
         height: 100%
     }
-    #lead-container{
-        position:absolute;
+
+    #lead-container {
+        position: absolute;
         height: 100vw;
         width: 100vw;
-        
-        
+
+
         z-index: 1
     }
 
     #lead {
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-   }
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+    }
 
-     #lead-content {
-    position: relative;
-    z-index: 10;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center
-}
-    #experience div{
+    #lead-content {
+        position: relative;
+        z-index: 10;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center
+    }
+
+    #experience div {
         font-size: 18px;
     }
 
-    #about{
+    #about {
         position: relative;
-        top:100vh;
-         padding: 75/1920vw 15/1080vh ;
-    height:35vh;
-    width:100vw;
-    border-bottom: 1px solid #dcd9d9;
-    background-color:#FFF;
-    z-index: 1;
+        top: 100vh;
+        padding: 75/1920vw 15/1080vh;
+        height: 35vh;
+        width: 100vw;
+        border-bottom: 1px solid #dcd9d9;
+        background-color: #FFF;
+        z-index: 1;
 
     }
-    #lead-container{
-    position: absolute;
-    height: 100vh; /*//수정 auto*/
-    width: 100vw;
-    max-height: 1100px;
-    max-width: 768px;
-    min-height: 300px;
-    overflow: hidden;
-}
+
+    #lead-container {
+        position: absolute;
+        height: 100vh;
+        /*//수정 auto*/
+        width: 100vw;
+        max-height: 1100px;
+        max-width: 768px;
+        min-height: 300px;
+        overflow: hidden;
+    }
 
     #mobile-menu-open,
     #mobile-menu-close {
@@ -1053,26 +1081,20 @@ footer {
         width: 100%
     }
 
-    #warning{
-        position: fixed;
-        font-size: 100px;
-        font-weight: 800;
-        z-index:2000;
-        color: red;
-        visibility: visible;
-    }
+
 
     #menu li {
         display: block;
         margin-bottom: 10px
     }
-    #about h2{
-       /* display:relative;
+
+    #about h2 {
+        /* display:relative;
         left:380px;*/
     }
 
     #lead-content h1 {
-        margin-top:70px;
+        margin-top: 70px;
         font-size: 2em
     }
 
@@ -1115,49 +1137,51 @@ footer {
 }
 
 @media only screen and (max-width: 520px) {
-    .background_image{
-    position: relative;
-    height: 180vh;
-    width: 100vw;
-    background: url(../images/pond.jpg);
-    background-size: cover;
-    padding: 15px;
-    overflow: hidden;
-    }
-    #skills{
-    position: relative;
-    height: 75vh;
-    min-height: auto;
-    max-height: 1400px; /*1080px-->2projects*/
-    background: url(../images/pond.jpg);
-    background-size: cover;
-    padding: 15px;
-    overflow: hidden;
+    .background_image {
+        position: relative;
+        height: 180vh;
+        width: 100vw;
+        background: url(../images/pond.jpg);
+        background-size: cover;
+        padding: 15px;
+        overflow: hidden;
     }
 
-    #about{
+    #skills {
+        position: relative;
+        height: 75vh;
+        min-height: auto;
+        max-height: 1400px;
+        /*1080px-->2projects*/
+        background: url(../images/pond.jpg);
+        background-size: cover;
+        padding: 15px;
+        overflow: hidden;
+    }
+
+    #about {
         height: 40vh;
         width: 100vw;
     }
-      #experience{
+
+    #experience {
         height: 90vh;
         width: 100vw;
     }
-    }
+}
 }
 
 @media only screen and (max-width: 480px) {
     #lead-content h1 {
-        font-size: 1.5em
-        margin-top:100px;
-        margin-bottom:40px;
+        font-size: 1.5em margin-top:100px;
+        margin-bottom: 40px;
     }
 
     #lead-content h2 {
         font-size: 1em
     }
 
-    #about{
+    #about {
         height: 45vh;
         width: 100vw;
     }
@@ -1167,33 +1191,35 @@ footer {
         padding: 5px 10px
     }
 
-    #skills{
+    #skills {
         height: 100vh;
         width: 100vw;
     }
 
-     #experience{
+    #experience {
         height: 100vh;
         width: 100vw;
     }
 
-    #about{
+    #about {
         height: 40vh;
         width: 100vw;
     }
 
 }
 
-@media only screen and (max-width: 300px){
-    #experience{
+@media only screen and (max-width: 300px) {
+    #experience {
         height: 100vh;
         width: 100vw;
     }
-    #skills{
+
+    #skills {
         height: 110vh;
         width: 100vw;
     }
-     #about{
+
+    #about {
         height: 48vh;
         width: 100vw;
     }
