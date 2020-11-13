@@ -25,10 +25,6 @@ if (isMobile) {
         alert("In LandScape mode might not work well");
         console.log("1");
     }
-    if (window.matchMedia("(orientation: portrait)").matches) {
-        alert("In LandScape mode might not work well");
-        console.log("0");
-    }
 }
 
 
