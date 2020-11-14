@@ -19,6 +19,7 @@ console.log("h:" + height);
 window.onscroll = function() {
     let value = window.pageYOffset / height + 1;
     inner.style.transform = `scale(${value})`;
+    warn.setAttribute("visibility", "hidden");
 };
 
 window.addEventListener("orientationchange", function() {
@@ -27,17 +28,13 @@ window.addEventListener("orientationchange", function() {
         alert("In LandScape mode might not work well");
         warn.setAttribute('visibility', 'visible');
         warn.setAttribute("position", "fixed");
-        warn.setAttribute("font-size", "100px");
-        warn.setAttribute("font-weight", "800");
-        warn.setAttribute("z-index", "2000");
-        warn.setAttribute("color", "red");
     } else if (window.matchMedia("(orientation: portrait)").matches) {
         warn.setAttribute("visibility", "hidden");
     }
 
 });
 
- warn.setAttribute("visibility", "visible");
+ warn.setAttribute("visibility", "hidden");
         warn.setAttribute("position", "fixed");
         warn.setAttribute("font-size", "100px");
         warn.setAttribute("font-weight", "800");
