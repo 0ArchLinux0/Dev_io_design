@@ -284,7 +284,7 @@ footer {
         font-weight: 800;
         z-index: 2000;
         color: red;
-        visibility: visible;
+        visibility: hidden;
     }
 
 #lead {
