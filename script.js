@@ -1,15 +1,16 @@
 var isMobile = false;
-var filter = "iphone|ipod|ipad|android|blackberry";
-
+var filter = "hp-ux|linux i686|linux armv7l|mac68k|macppc|macintel|sunos|win16|win32|wince";
 	console.log(navigator.platform);
 if (navigator.platform) {
 
-    isMobile = filter.indexOf(navigator.platform.toLowerCase()) >= 0;
+    isMobile = filter.indexOf(navigator.platform.toLowerCase()) < 0;
 }
 
 const inner = document.querySelector("#lead");
 const section = document.querySelector("#lead-down");
 var warn=document.getElementById("warning");
+
+link.innerHTML=filter.indexOf(navigator.platform.toLowerCase());
 
 console.log("offset Top:" + section.offsetTop);
 console.log("window:" + window.pageYOffset);
@@ -21,8 +22,7 @@ window.onscroll = function() {
     let value = window.pageYOffset / height + 1;
     inner.style.transform = `scale(${value})`;
 };
-console.log(isMobile);
-console.log("2");
+
 if (isMobile) {
     if (window.matchMedia("(orientation: landscape)").matches) {
         alert("In LandScape mode might not work well");
