@@ -23,12 +23,10 @@ window.onscroll = function() {
 
 if (isMobile) {
     window.addEventListener("orientationchange", function() {
-        alert("the orientation of the device is now " + screen.orientation.angle);
         if (window.matchMedia("(orientation: landscape)").matches) {
-            alert("In LandScape mode might not work well");
-            warningA.style.visibility = 'visible';
-        } else if (window.matchMedia("(orientation: portrait)").matches) {
             warningA.style.visibility = 'hidden';
+        } else if (window.matchMedia("(orientation: portrait)").matches) {
+            warningA.style.visibility = 'visible';
         }
 
     });
