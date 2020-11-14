@@ -1,7 +1,10 @@
 var isMobile = false;
 var filter = "iphone|ipod|ipad|android|blackberry";
+
+	console.log(navigator.platform);
 if (navigator.platform) {
-    isMobile = filter.indexOf(navigator.platform.toLowerCase()) > 0;
+
+    isMobile = filter.indexOf(navigator.platform.toLowerCase()) >= 0;
 }
 
 const inner = document.querySelector("#lead");
@@ -16,7 +19,6 @@ console.log("h:" + height);
 
 window.onscroll = function() {
     let value = window.pageYOffset / height + 1;
-    console.log(value);
     inner.style.transform = `scale(${value})`;
 };
 console.log(isMobile);
