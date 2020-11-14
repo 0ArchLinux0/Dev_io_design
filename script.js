@@ -26,6 +26,7 @@ if (isMobile) {
         if (window.matchMedia("(orientation: landscape)").matches) {
             warningA.style.visibility = 'hidden';
         } else if (window.matchMedia("(orientation: portrait)").matches) {
+        	alert("Use Portrait mode!!");
             warningA.style.visibility = 'visible';
         }
 
