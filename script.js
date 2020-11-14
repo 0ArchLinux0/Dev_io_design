@@ -1,6 +1,6 @@
 var isMobile = false;
 var filter = "hp-ux|linux i686|linux armv7l|mac68k|macppc|macintel|sunos|win16|win32|wince";
-	console.log(navigator.platform);
+console.log(navigator.platform);
 if (navigator.platform) {
 
     isMobile = filter.indexOf(navigator.platform.toLowerCase()) < 0;
@@ -8,14 +8,12 @@ if (navigator.platform) {
 
 const inner = document.querySelector("#lead");
 const section = document.querySelector("#lead-down");
-var warn=document.getElementById("warning");
-
-link.innerHTML=filter.indexOf(navigator.platform.toLowerCase());
+var warn = document.getElementById("warning");
 
 console.log("offset Top:" + section.offsetTop);
 console.log("window:" + window.pageYOffset);
 
-var height = inner.clientHeight
+const height = inner.clientHeight;
 console.log("h:" + height);
 
 window.onscroll = function() {
@@ -23,19 +21,51 @@ window.onscroll = function() {
     inner.style.transform = `scale(${value})`;
 };
 
-if (isMobile) {
+window.addEventListener("orientationchange", function() {
+    alert("the orientation of the device is now " + screen.orientation.angle);
     if (window.matchMedia("(orientation: landscape)").matches) {
         alert("In LandScape mode might not work well");
-        warn.setAttribute("visibility","visible");
-        warn.setAttribute("font-size","100px");
-        warn.setAttribute("font-weight: 800");
-        warn.setAttribute("z-index","2000");
-        warn.setAttribute("color","red");
-        warn.setAttribut("visibility","visible");
-        console.log("1");
+        warn.setAttribute('visibility', 'visible');
+        warn.setAttribute("position", "fixed");
+        warn.setAttribute("font-size", "100px");
+        warn.setAttribute("font-weight", "800");
+        warn.setAttribute("z-index", "2000");
+        warn.setAttribute("color", "red");
+    } else if (window.matchMedia("(orientation: portrait)").matches) {
+        warn.setAttribute("visibility", "hidden");
     }
+
+});
+
+ warn.setAttribute("visibility", "visible");
+        warn.setAttribute("position", "fixed");
+        warn.setAttribute("font-size", "100px");
+        warn.setAttribute("font-weight", "800");
+        warn.setAttribute("z-index", "2000");
+        warn.setAttribute("color", "red");
+/*
+if (isMobile) {*/
+/*if (window.matchMedia("(orientation: landscape)").matches) {
+    alert("In LandScape mode might not work well");
+    warn.setAttribute("visibility", "visible");
+    warn.setAttribute("position", "fixed");
+    warn.setAttribute("font-size", "100px");
+    warn.setAttribute("font-weight", "800");
+    warn.setAttribute("z-index", "2000");
+    warn.setAttribute("color", "red");
 }
 
+if (window.matchMedia("(orientation: portrait)").matches) {
+    alert("Portrait");
+    warn.setAttribute("visibility", "hidden");
+    warn.setAttribute("position", "fixed");
+    warn.setAttribute("font-size", "100px");
+    warn.setAttribute("font-weight", "800");
+    warn.setAttribute("z-index", "2000");
+    warn.setAttribute("color", "red");
+}*/
+/*}
+ */
 
 
 
