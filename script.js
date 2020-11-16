@@ -14,11 +14,11 @@ let warning = document.getElementById("warning");
 
 window.onload = (function() {
     console.log("waiting...");
-    setTimeout(function() {
+    setTimeout(function() {            //callback execute after t ms
         siteloading.style.visibility = 'hidden';
         console.log("hiddend");
         if (isMobile) {
-            if (window.innerWidth < window.innerHeight) {
+            if (window.innerWidth < window.innerHeight) { //moblie lanscape
                 sitevisible.style.visibility = 'visible';
                 warning.style.visibility = 'hidden';
             } else {
@@ -44,16 +44,15 @@ window.onscroll = function() {
 };
 
 
-if (isMobile) {
-    window.addEventListener("orientationchange", function() {
+if (isMobile) {         //prevent rotate
+    window.addEventListener("orientationchange", function() { 
         if (window.matchMedia("(orientation: landscape)").matches) {
             sitevisible.style.visibility = 'visible';
-            warning.style.visibility = 'hidden';
         } else if (window.matchMedia("(orientation: portrait)").matches) {
             alert("Use Portrait mode!!");
             window.scrollTo(0, 0);
+            location.replace("https://0archlinux0.github.io/Interactive_HTML/String/stringReactToMouse.html");
             sitevisible.style.visibility = 'hidden';
-            warning.style.visibility = 'visible';
         }
 
     });
