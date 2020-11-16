@@ -35,7 +35,7 @@ window.onscroll = function() {
 };
 
 if (isMobile) {
-    window.addEventListener("orientationchange", function() {
+    /*window.addEventListener("orientationchange", function() {
         if (window.matchMedia("(orientation: landscape)").matches) {
            sitevisible.style.visibility = 'visible';
             warning.style.visibility = 'hidden';
@@ -46,7 +46,17 @@ if (isMobile) {
             warning.style.visibility = 'visible';
         }
 
-    });
+    });*/
+
+        if (window.innerWidth>window.innerHeight) {
+           sitevisible.style.visibility = 'visible';
+            warning.style.visibility = 'hidden';
+        } else{
+            alert("Use Portrait mode!!");
+            window.scrollTo(0,0);
+            sitevisible.style.visibility = 'hidden';
+            warning.style.visibility = 'visible';
+        }
 }
 
 
