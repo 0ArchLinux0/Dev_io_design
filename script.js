@@ -9,7 +9,7 @@ if (navigator.platform) {
 const inner = document.querySelector("#lead");
 const section = document.querySelector("#lead-down");
 const sitevisible=document.querySelector("*");
-var warningA = document.getElementById("warning");
+var warning = document.getElementById("warning");
 
 console.log("offset Top:" + section.offsetTop);
 console.log("window:" + window.pageYOffset);
@@ -25,10 +25,12 @@ window.onscroll = function() {
 if (isMobile) {
     window.addEventListener("orientationchange", function() {
         if (window.matchMedia("(orientation: landscape)").matches) {
-           sitevisible.style.visibility = 'hidden';
+           sitevisible.style.visibility = 'visible';
+            warning.style.visibility = 'hidden';
         } else if (window.matchMedia("(orientation: portrait)").matches) {
         	alert("Use Portrait mode!!");
-            sitevisible.style.visibility = 'visible';
+            sitevisible.style.visibility = 'hidden';
+            warning.style.visibility = 'visible';
         }
 
     });
