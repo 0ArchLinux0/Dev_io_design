@@ -16,11 +16,11 @@ window.onload= (function(){
     console.log("wainting...");
     setTimeout(function(){
    siteloading.style.visibility = 'hidden';
-   }, 1000);
+   }, 30);
 
     
     console.log("hidden"); 
-   
+   O
     }); //ms
 
 console.log("offset Top:" + section.offsetTop);
