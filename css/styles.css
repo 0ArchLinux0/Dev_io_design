@@ -12,7 +12,7 @@
 */
 html,
 body {
-    height: :100%;
+    height: 100%;
     position: relative;
 }
 
@@ -181,9 +181,7 @@ footer {
     background: url(../images/snow.png);
     background-size: cover;*/
     z-index: 15;
-    text-align: center
-
-    padding: 50px 0;
+    text-align: center padding: 50px 0;
     background: #F6F6F6;
 }
 
@@ -289,13 +287,46 @@ footer {
 
 }
 
-#warning{
+#warningFrame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: 3;
+    text-align: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    visibility: hidden;
+}
+
+ #siteLoading {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
         position: fixed;
-        font-size: 100px;
-        font-weight: 800;
-        z-index: 2000;
-        color: red;
-        visibility: hidden;
+        display: block;
+        opacity: 0.7;
+        background-color: #fff;
+        z-index: 201;
+        text-align: center;
+    }
+
+    #loading-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        display: block;
+        opacity: 0.7;
+        background-color: #fff;
+        z-index: 201;
+        text-align: center;
     }
 
 #lead {
@@ -585,12 +616,12 @@ footer {
     margin-top: 10px
 }
 
-.background_animation{
+.background_animation {
     position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border: none;
     z-index: -1;
     text-align: center;
@@ -691,7 +722,7 @@ footer {
     min-height: 300px;
     margin: 0 auto 30px auto;
     overflow: hidden;
-    
+
     border-radius: 4px
 }
 
@@ -951,12 +982,13 @@ footer {
         min-height: auto;
         max-height: 1400px;
         /*1080px-->2projects*/
-       
+
         padding: 15px;
         overflow: hidden;
     }
-     #about h2{
-        margin-left:20px;
+
+    #about h2 {
+        margin-left: 20px;
     }
 
 }
@@ -1015,7 +1047,7 @@ footer {
         min-height: auto;
         max-height: 1400px;
         /*1080px-->2projects*/
-    
+
         padding: 15px;
         overflow: hidden;
     }
@@ -1072,7 +1104,7 @@ footer {
     #about {
         position: relative;
         top: 100vh;
-        margin-bottom:10px;
+        margin-bottom: 10px;
         height: 35vh;
         width: 100vw;
         border-bottom: 1px solid #dcd9d9;
@@ -1080,8 +1112,8 @@ footer {
         z-index: 1;
     }
 
-    #about h2{
-        margin-left:20px;
+    #about h2 {
+        margin-left: 20px;
     }
 
     #lead-container {
@@ -1178,7 +1210,7 @@ footer {
         min-height: auto;
         max-height: 1400px;
         /*1080px-->2projects*/
-       
+
         background-size: cover;
         padding: 15px;
         overflow: hidden;
