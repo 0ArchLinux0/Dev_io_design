@@ -585,7 +585,7 @@ footer {
     margin-top: 10px
 }
 
-#background_animation{
+.background_animation{
     position: absolute;
     top:0;
     left:0;
