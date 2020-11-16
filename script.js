@@ -8,20 +8,29 @@ if (navigator.platform) {
 
 const inner = document.querySelector("#lead");
 const section = document.querySelector("#lead-down");
-const sitevisible=document.querySelector("*");
-const siteloading=document.querySelector("#siteLoading");
+const sitevisible = document.querySelector("*");
+const siteloading = document.querySelector("#siteLoading");
 let warning = document.getElementById("warning");
 
-window.onload= (function(){ 
-    console.log("wainting...");
-    setTimeout(function(){
-   siteloading.style.visibility = 'hidden';
-   }, 30);
+window.onload = (function() {
+    console.log("waiting...");
+    setTimeout(function() {
+        siteloading.style.visibility = 'hidden';
+        console.log("hiddend");
+        if (isMobile) {
+            if (window.innerWidth < window.innerHeight) {
+                sitevisible.style.visibility = 'visible';
+                warning.style.visibility = 'hidden';
+            } else {
+                alert("Use Portrait mode!!");
+                window.scrollTo(0, 0);
+                sitevisible.style.visibility = 'hidden';
+                warning.style.visibility = 'visible';
+            }
+        }
+    }, 30);
+});
 
-    
-    console.log("hidden"); 
-   O
-    }); //ms
 
 console.log("offset Top:" + section.offsetTop);
 console.log("window:" + window.pageYOffset);
@@ -34,29 +43,18 @@ window.onscroll = function() {
     inner.style.transform = `scale(${value})`;
 };
 
+
 if (isMobile) {
-    /*window.addEventListener("orientationchange", function() {
+    window.addEventListener("orientationchange", function() {
         if (window.matchMedia("(orientation: landscape)").matches) {
-           sitevisible.style.visibility = 'visible';
+            sitevisible.style.visibility = 'visible';
             warning.style.visibility = 'hidden';
         } else if (window.matchMedia("(orientation: portrait)").matches) {
-        	alert("Use Portrait mode!!");
-            window.scrollTo(0,0);
-            sitevisible.style.visibility = 'hidden';
-            warning.style.visibility = 'visible';
-        }
-
-    });*/
-
-        if (window.innerWidth>window.innerHeight) {
-           sitevisible.style.visibility = 'visible';
-            warning.style.visibility = 'hidden';
-        } else{
             alert("Use Portrait mode!!");
-            window.scrollTo(0,0);
+            window.scrollTo(0, 0);
             sitevisible.style.visibility = 'hidden';
             warning.style.visibility = 'visible';
         }
+
+    });
 }
-
-
