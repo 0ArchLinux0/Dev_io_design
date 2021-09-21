@@ -163,16 +163,18 @@ footer {
     position: relative;
     top: 100vh;
     z-index: 15;
-    text-align: center padding: 50px 0;
+    text-align: center;
+    padding: 0px 0;
     background: #F6F6F6;
 }
 
 .copyright {
-    padding-top: 20px
+    padding-top: 5px
 }
 
 .copyright p {
     margin: 0;
+    font-size: 0.9em;
     color: #74808a
 }
 
@@ -183,7 +185,7 @@ footer {
 .top span {
     cursor: pointer;
     display: block;
-    margin: 15px auto 0 auto;
+    margin: 5px auto 2px auto;
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -200,7 +202,7 @@ footer {
 }
 
 .social ul {
-    margin: 5px 0 0 0;
+    margin: 2px 0 0 0;
     padding: 0
 }
 
@@ -213,7 +215,7 @@ footer {
 .social a {
     display: block;
     color: #74808a;
-    padding: 10px
+    padding: 0px 10px;
 }
 
 .social a:hover {
@@ -266,7 +268,6 @@ footer {
 
 .background-alt {
     background: #f2f2f5;
-
 }
 
  #siteLoading {
@@ -332,7 +333,7 @@ footer {
 
 .background_image {
     position: relative;
-    height: 160vh;
+    /* height: 160vh; */
     width: 100vw;
     min-height: 500px;
     max-height: 100vw;
@@ -431,7 +432,7 @@ footer {
     position: relative;
     top: 100vh;
     padding: 0px, 10px, 0px, 0px;
-    height: 35vh;
+    height: 38vh;
     width: 100vw;
     border-bottom: 1px solid #dcd9d9;
     background-color: #FFF;
@@ -457,7 +458,7 @@ footer {
     position: relative;
     padding: 3px;
     top: 100vh;
-    height: 80vh;
+    /* height: 80vh; */
     width: 100vw;
     text-align: center;
     border-bottom: 1px solid #dcd9d9;
@@ -587,7 +588,6 @@ footer {
     top: 100vh;
     padding: 50px 15px 20px 15px;
     border-bottom: 1px solid #dcd9d9;
-
     background: url(../images/snow.png);
     background-size: cover;
     z-index: 15;
@@ -603,8 +603,7 @@ footer {
     max-width: 700px;
     margin: 0 auto 50px auto;
     padding: 15px;
-    border: 2px solid #ffffff;
-    ;
+    /* border: 2px solid #ffffff; */
     text-align: left
 }
 

@@ -236,11 +236,11 @@ header {
 }
 
 footer {
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .copyright {
-    padding-top: 20px;
+    padding-top: 5px;
 
     p {
         margin: 0;
@@ -253,10 +253,10 @@ footer {
 
     span {
         cursor: pointer;
-        display: block;
-        margin: 15px auto 0 auto;
-        width: 35px;
-        height: 35px;
+        // display: block;
+        margin: 5px auto 0 auto;
+        width: 20px;
+        height: 20px;
         border-radius: 50%;
         border: 3px solid lighten($text, 25%);
         text-align:center;
